@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bookstore.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionBookStoreHome">
+        <div class="book-store-home-page">
+            <h1 class="home-page-heading">Popular Book</h1>
+            <div class="popular-book-container d-flex felx-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="popular-book-image" />
+                <div class="popular-book-short-details-container">
+                    <h1 class="popular-book-heading">wings of fire</h1>
+                    <p class="popular-book-text">
+                        An Autobiography<br /> of Abdul Kalam </p>
+                    <p class="popular-book-author">By arun Tiwari</p>
+                    <button class="button btn btn-primary" onclick="display('sectionWingsOfFireBookDetails')">
+                        Read now
+                    </button>
+                </div>
+            </div>
+            <h1 class="recommended-books-heading">Recommend books</h1>
+            <div class="recommended-book-container d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="popular-book-image" />
+                <div class="recommended-book-short-details-container">
+                    <h1 class="recommended-book-name">The 3 mistakes of my life</h1>
+                    <p class="recommended-book-discription">india author <br>by chetan bhagat</p>
+                    <button class="button btn btn-primary" onclick="display('sectionTheThreeMistakesOfMyLifeBookDetails')">
+                        Read now
+                    </button>
+                </div>
+            </div>
+            <div class="recommended-books-container d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="popular-book-image" />
+                <div>
+                    <h1 class="recommended-book-name">Harry potter</h1>
+                    <p class="recommended-book-discription">
+                        and the sorcerers stone <br /> by jK Rowling
+                    </p>
+                    <button class="button btn btn-primary" onclick="display('sectionHarryPotterBookDetails')">
+                        Read now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='sectionWingsOfFireBookDetails'>
+        <div class="book-details-page">
+            <img src='https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png' class="book-details-page-image" />
+            <h1 class="book-name">Wings of Fire</h1>
+            <p class="author">By arun Tiwari</p>
+            <p class="book-description">
+                Evary common man who by his sheer grit and hard work achieves success
+                should share his story with the rest for they may find inspiration and
+                strength to go on,in his story.The 'Wings of Fire' is one such Autobiography by visionary scirntist Dr.APJ Abdul Kalam,who from very humble beginnings rose to be the president of India.The book is full of insights,personal moments and life experiances of Dr.KALAM.
+                It gives us an understanding on his journey of success.
+            </p>
+            <button class="button btn btn-warning" onclick="display('sectionBookStoreHome')">Back</button>
+            <button class="button btn btn-primary">But Now</button>
+        </div>
+    </div>
+
+    <div id='sectionTheThreeMistakesOfMyLifeBookDetails'>
+        <div class="book-details-page">
+            <img src='https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png' class="book-details-page-image" />
+            <h1 class="book-name">The 3 mistakes of My life</h1>
+            <p class="author">By Chetan Bhagat</p>
+            <p class="book-description">
+                Evary common man who by his sheer grit and hard work achieves success
+                should share his story with the rest for they may find inspiration and
+                strength to go on,in his story.The 'Wings of Fire' is one such Autobiography by visionary scirntist Dr.APJ Abdul Kalam,who from very humble beginnings rose to be the president of India.The book is full of insights,personal moments and life experiances of Dr.KALAM.
+                It gives us an understanding on his journey of success.
+            </p>
+            <button class="button btn btn-warning" onclick="display('sectionBookStoreHome')">Back</button>
+            <button class="button btn btn-primary">But Now</button>
+        </div>
+    </div>
+
+    <div id='sectionHarryPotterBookDetails'>
+        <div class="book-details-page">
+            <img src='https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png' class="book-details-page-image" />
+            <h1 class="book-name">Harry potter</h1>
+            <p class="author">By J.K.Rowling</p>
+            <p class="book-description">
+                Evary common man who by his sheer grit and hard work achieves success
+                should share his story with the rest for they may find inspiration and
+                strength to go on,in his story.The 'Wings of Fire' is one such Autobiography by visionary scirntist Dr.APJ Abdul Kalam,who from very humble beginnings rose to be the president of India.The book is full of insights,personal moments and life experiances of Dr.KALAM.
+                It gives us an understanding on his journey of success.
+            </p>
+            <button class="button btn btn-warning" onclick="display('sectionBookStoreHome')">Back</button>
+            <button class="button btn btn-primary">But Now</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
